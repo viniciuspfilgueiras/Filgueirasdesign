@@ -132,6 +132,11 @@ body {
     height: 70rem;
 }
 
+@media(max-width:768px) {
+    .container-portifolio {
+        height: 132rem;
+    }
+}
 .imagens-portifolio {
     display: flex;
     justify-content: center;
@@ -146,9 +151,12 @@ body {
 .containers {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    margin-top: 50px;
-    
+    gap: 10px;
+    margin: 50px 30px 0 30px;  
+}
+.containers a img{
+    width: 100%;
+    height: 100%;
 }
 
 .imagens a img {
@@ -171,7 +179,7 @@ body {
 
 footer .container-fluid {
     background-color: #d2d3d5;
-    height: 400px;
+    height: 400px; 
 }
 
 footer .contatos-escrito {
@@ -234,4 +242,11 @@ footer h1 {
 #copy a {
     text-decoration: none;
     color: white;
+}
+
+@media (max-width: 768px) {
+    footer {
+        position: relative;
+        /* top: 955px; */
+    }
 }
